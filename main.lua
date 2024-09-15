@@ -5,7 +5,7 @@ function love.resize(w, h)
 	GBScreen.resize ()
 end
 
-local img = love.graphics.newImage('image160x144.png')
+local backimg = love.graphics.newImage('backimg.png')
 
 
 function love.draw ()
@@ -20,7 +20,9 @@ function love.draw ()
 
 	love.graphics.setColor (1,1,1)
 	GBScreen.drawCanvas ()
-
+	
+	love.graphics.setColor (1,1,1)
+	love.graphics.draw (backimg)
 
 
 end
